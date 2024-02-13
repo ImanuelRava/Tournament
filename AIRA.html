@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AIRA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      table-layout: fixed; /* Added fixed table layout */
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #333;
+    }
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+    .complaint-button {
+      padding: 10px 20px;
+      background-color: #f44336;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AIRA</h1>
+  </header>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 150px;">MLBB ID</th>
+        <th style="width: 150px;">Nickname</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>83512232</td>
+        <td>Nearr.</td>
+      </tr>
+      <tr>
+        <td>255637767</td>
+        <td>C E Z.</td>
+      </tr>
+      <tr>
+        <td>12036751</td>
+        <td>Celliau.</td>
+      </tr>
+      <tr>
+        <td>125577590</td>
+        <td>AppleLyn.</td>
+      </tr>
+      <tr>
+        <td>107022749</td>
+        <td>King Dayeon</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button class="complaint-button" onclick="window.location.href = 'https://api.whatsapp.com/send/?phone=6287740868937';">Complain</button>
+</body>
+</html>
