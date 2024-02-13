@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tournament Homepage</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-image: url("background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+    }
+
+    .transparent-box {
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .button-container {
+      margin-top: 50px;
+    }
+
+    .button-container button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="transparent-box">
+    <h1>Welcome to the Tournament!</h1>
+    <div class="button-container">
+      <button onclick="openRules()">Rules and Guidelines</button>
+      <button onclick="openDiscord()">Discord Link</button>
+      <button onclick="openTeamChecker()">Team Checker</button>
+    </div>
+  </div>
+
+  <script>
+    function openRules() {
+      window.open("https://drive.google.com/file/d/1yy8jGXb__ugjCwKEjUgO_LFWL90jRMWW/view?usp=sharing", "_blank");
+    }
+
+    function openDiscord() {
+      window.open("https://discord.gg/mKKQajxd", "_blank");
+    }
+
+    function openTeamChecker() {
+      // Replace "team-checker.html" with the actual URL of your team checker page
+      window.location.href = "team-checker.html";
+    }
+  </script>
+</body>
+</html>
