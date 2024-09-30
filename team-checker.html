@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Team Checker</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url(YZ.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+    .form-container {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+  <script>
+    function checkLogin() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Define the list of valid usernames and passwords
+      var validUsers = {
+        "Amictia":"6289635811384",
+        "Boboboi Air":"6285893222521",
+        "SDN 04 PETANG":"6285772231855",
+        "Kitten Catsu":"6287815069166",
+        "Siluman":"6285156562864",
+        "3T":"6281288665431",
+        "Ale E-sport":"6282313155902",
+        "Tambal jam 24 ban":"6287816669751",
+        "Arcana Nemesiss":"6281337022985",
+        "EPOS DISINI":"6285883098367",
+        "Jawa Semangat":"6282134843654",
+        "V":"6289635826445",
+        "MUHAMMAD LUKAS":"6281917041341",
+        "VIP":"62857171737744",
+        "AIRA":"6285817452873",
+        "izin menang":"6281387015836",
+        "udah pensi":"6281386394548",
+        "HAHU HOHENG":"628973190333",
+        "Ilmu Padi":"6285281915844",
+        "Chef Hanip":"6281284895769",
+        "ASMARA SPIKOE":"6282131496118",
+        "menyalah abangkuh":"6281293330054",
+        "acumalaka isprot":"6285774131233",
+        "nadya cantik":"6288229024733",
+        "Doa Papah XD":"6281380764278",
+        "visva la vida":"6282111191511",
+        "Dasys":"6289689576568",
+        "Demi Rakyat":"6282141978378",
+        "TIM HOREE":"6289522854528",
+        "4 sehat 5 naik haji":"6282180187915",
+        "Dawn Wanderers":"6282122935045",
+        "Soryu Mayden":"6287887614886",
+        "Tetumbuhan Gerakan Tambahan":"628985931482"
+      };
+
+      // Check if the entered username and password exist in the validUsers list
+      if (validUsers.hasOwnProperty(username) && validUsers[username] === password) {
+        window.location.href = username + ".html";
+      } else {
+        alert("Invalid username or password. Please try again.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Team Checker</h2>
+    <form>
+      <label for="username">Team Name</label><br>
+      <input type="text" id="username" name="username" required><br><br>
+
+      <label for="password">Password</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <input type="button" value="Login" onclick="checkLogin()">
+    </form>
+  </div>
+</body>
+</html>
