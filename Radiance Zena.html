@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Radiance Zena</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
     }
     header {
       background-color: #333;
@@ -15,12 +20,13 @@
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 20px;
-      table-layout: fixed; /* Added fixed table layout */
+      margin: 20px 0;
+      table-layout: auto;
     }
     th, td {
       padding: 10px;
       border: 1px solid #333;
+      text-align: left;
     }
     th {
       background-color: #333;
@@ -28,8 +34,8 @@
     }
     .admin-button {
       padding: 10px 20px;
-      background-color: #f44336;
-      color: #4DFF00;
+      background-color: #4CAF50; /* Green color for admin button */
+      color: #fff;
       border: none;
       border-radius: 4px;
       cursor: pointer;
@@ -38,7 +44,7 @@
     }
     .opponent-button {
       padding: 10px 20px;
-      background-color: #f44336;
+      background-color: #f44336; /* Red color for opponent button */
       color: #fff;
       border: none;
       border-radius: 4px;
@@ -46,13 +52,22 @@
       font-size: 16px;
       margin-top: 20px;
     }
+    .left-align {
+      text-align: left; /* Align text to the left */
+      margin: 20px; /* Add margin for spacing */
+    }
+    @media (max-width: 600px) {
+      th, td {
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Radiance Zena</h1>
   </header>
-  <p>Leader: <a href="https://api.whatsapp.com/send/?phone=6281380925935">Noel</a></p>
+  <p class="left-align">Leader: <a href="https://api.whatsapp.com/send/?phone=6281380925935">Noel</a></p>
   <table>
     <thead>
       <tr>
@@ -83,8 +98,7 @@
       </tr>
     </tbody>
   </table>
-  <p>Next Match Opponent: <button class="opponent-button" onclick="window.location.href = 'null.html';">Opponent</button></p>
-  <button class="admin-button" onclick="window.location.href = 'https://api.whatsapp.com/send/?phone=6281380925935';">Admin</button>
+  <p class="left-align">Next Match Opponent: <button class="opponent-button" onclick="window.location.href='null.html';">Opponent</button></p>
+  <p class="left-align">Admin Contact: <button class="admin-button" onclick="window.location.href='https://api.whatsapp.com/send/?phone=6281380925935';">Admin</button></p>
 </body>
 </html>
-
