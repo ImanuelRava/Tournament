@@ -38,10 +38,10 @@
     }
   </style>
   <script>
-    // Redirect to team-checker.html upon page load
-    window.onload = function() {
+    // Redirect to team-checker.html when the user clicks reload
+    window.addEventListener('beforeunload', function () {
       window.location.href = 'team-checker.html';
-    };
+    });
   </script>
 </head>
 <body>
