@@ -38,9 +38,18 @@
     }
   </style>
   <script>
-    // Redirect to team-checker.html when the user clicks reload
-    window.addEventListener('beforeunload', function () {
-      window.location.href = 'team-checker.html';
+    // Check if the user is refreshing the page
+    window.addEventListener('load', function() {
+      // If there is a flag in session storage, redirect
+      if (sessionStorage.getItem('redirected')) {
+        sessionStorage.removeItem('redirected'); // Remove the flag to prevent looping
+        window.location.href = 'team-checker.html';
+      }
+    });
+
+    window.addEventListener('beforeunload', function() {
+      // Set the flag in session storage before unloading
+      sessionStorage.setItem('redirected', 'true');
     });
   </script>
 </head>
